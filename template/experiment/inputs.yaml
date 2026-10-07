@@ -1,0 +1,42 @@
+# Illustrative planning format only; no parser or final schema is defined.
+# null = unresolved, never zero/default. Resolve before any future execution.
+# Every unresolved engineering field: TODO — requires research/decision.
+template: true
+experiment:
+  id: null
+  revision: null
+  research_question: null
+  hypothesis: null
+parameters:
+  independent: []  # Eventually entries with name, unit, values/range, source.
+  controlled: []   # Eventually entries with name, unit, value, reason.
+  derived: []      # Eventually entries with name, unit, definition, dependencies.
+  dependent: []    # Eventually response definitions and units.
+system:
+  definition_file: null
+  conventions: null
+operating_conditions:
+  definition_file: null
+  conventions: null
+model:
+  name: null
+  version: null
+  configuration: null
+  assumptions: []
+  validity_domain: null
+method:
+  baseline: null
+  sampling_plan: null
+  constraints: []
+  exclusion_rules: []
+  randomness:
+    applicable: null
+    seed: null
+    generator: null
+acceptance_criteria: []
+provenance:
+  input_sources: []
+  external_artifacts: []
+outputs:
+  directory: results/
+# Generated run provenance belongs in a future separate run record, not here.
